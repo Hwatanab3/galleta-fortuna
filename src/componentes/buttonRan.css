@@ -1,0 +1,36 @@
+.container-btn {
+    position: fixed;
+    z-index: 10;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    font-family: system-ui;
+    font-size: 2rem;
+    width: 300px;
+    height: 80px;
+    padding: 0;
+    border: 4px solid #fff;
+    background-color: #ffffff9a;
+    opacity: .8;
+    color: rgba(66, 66, 66, 0.884);
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+@media (max-height: 720px) {
+    .container-btn {
+        top: 85%;
+    }
+
+    .btn {
+        font-size: 1.5rem;
+        width: 200px;
+        height: 60px;
+    }
+}
