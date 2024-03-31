@@ -1,4 +1,4 @@
-![App Screenshot] (./assets/Screenshot.png)
+![App Screenshot](https://raw.githubusercontent.com/Hwatanab3/galleta-fortuna/main/public/assets/Screenshot.png)
 
 #PORTAFOLIO DE HIROSHI WATANABE
 
