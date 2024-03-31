@@ -1,15 +1,15 @@
-import React from 'react'
 import "./phraseSelect.css"
 
-const PhraseSelect = ({ phrase }) => {
+const PhraseSelect = ({ arrPhrase, rectStyle }) => {
+
 
 
     return (
-        <div className='container-phrase'>
-            <span className='phrase-txt'>{phrase}</span>
-
+        <div className='container-phrase' style={rectStyle}>
+            <span className='phrase-txt'>{arrPhrase.phrase}</span>
         </div>
     )
 }
 
 export default PhraseSelect
+

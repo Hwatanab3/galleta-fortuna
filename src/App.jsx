@@ -1,45 +1,51 @@
 import { useState } from "react"
 import "./App.css"
 import phrases from "./utils/phrases.json"
+import arrImg from './utils/arrImg.json'
 import PhraseSelect from "./componentes/PhraseSelect";
-import BgImg from "./componentes/BgImg";
 import ButtonRan from "./componentes/ButtonRan";
+import random from "./utils/random";
 
 
 function App() {
 
-  const [isIndex, setIsIndex] = useState(null)
-  const [bgSelect, setBgSelect] = useState(Math.floor(Math.random() * 4) + 1)
+  const [arrPhrase, setArrPhrase] = useState(phrases[0].phrase)
+  const [bgSelect, setBgSelect] = useState(random(arrImg))
   const [txt, setTxt] = useState("Abre una galleta")
+  const [rect, setRect] = useState("a")
 
-  const NewCoockie = () => {
-    const newIndex = Math.floor(Math.random() * phrases.length);
-    setIsIndex(newIndex)
-
-    const newBg = Math.floor(Math.random() * 4) + 1;
-    setBgSelect(newBg);
-
-    const newTxt = "Ver Otra";
-    setTxt(newTxt)
+  const rectStyle = {
+    backgroundImage: `url(./assets/background/rectangle${rect}.svg)`
   }
 
 
+  const bgStyle = {
+    backgroundImage: `url(./assets/background/fondo${bgSelect}.jpg)`
+  }
+  console.log(bgSelect)
+  console.log(arrPhrase);
+
   return (
     <>
-      <h1 className="title">GALLETAS DE LA FORTUNA</h1>
-      {isIndex !== null && (
-        <PhraseSelect
-          phrase={phrases[isIndex].phrase}
+      <div className="background" style={bgStyle}>
+        <h1 className="title">GALLETAS DE LA FORTUNA</h1>
+        {arrPhrase !== null && (
+          <PhraseSelect
+            arrPhrase={arrPhrase}
+            rectStyle={rectStyle}
+          />
+        )}
+        <ButtonRan
+          setArrPhrase={setArrPhrase}
+          txt={txt}
+          setTxt={setTxt}
+          setBgSelect={setBgSelect}
+          setRect={setRect}
         />
-      )}
-      <ButtonRan
-        onclick={NewCoockie}
-        txt={txt}
-      />
-      <BgImg
-        srcImg={`./assets/background/fondo${bgSelect}.jpg`}
-
-      />
+      </div>
+      <footer className="footer">
+        <span className="footer-span"> REALIZADO POR: HIROSHI WATANABE - 2024 </span>
+      </footer>
     </>
   )
 }
