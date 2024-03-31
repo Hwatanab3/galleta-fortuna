@@ -1,6 +1,6 @@
 ![App Screenshot](https://raw.githubusercontent.com/Hwatanab3/galleta-fortuna/main/public/assets/Screenshot.png)
 
-##Galleta de la Fortuna
+## Galleta de la Fortuna
 
 El proyecto es un aplicativo web que consiste en una simulación de una galleta de la fortuna, que al solicitarlo otorga una frase similar a como si abrieras una galleta de la fortuna real.
 
