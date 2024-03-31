@@ -1,6 +1,6 @@
 ![App Screenshot](https://raw.githubusercontent.com/Hwatanab3/galleta-fortuna/main/public/assets/Screenshot.png)
 
-#PORTAFOLIO DE HIROSHI WATANABE
+##Galleta de la Fortuna
 
 El proyecto es un aplicativo web que consiste en una simulación de una galleta de la fortuna, que al solicitarlo otorga una frase similar a como si abrieras una galleta de la fortuna real.
 
@@ -21,7 +21,7 @@ Entre mis éxitos destaco que durante mi formación, apoye a mis compañeros a m
 Cuento con experiencia desarrollando aplicaciones web, y mi sueño es crear una ecosistema para fusionar mis pasiones: la programación y la arquitectura. Ayudaría a la sociedad brindar acceso al diseño Arquitectónico y Urbanístico.
 
 
-![Logo](https://raw.githubusercontent.com/Hwatanab3/portafolio-segundo/main/assets/img/firma.webp)
+![Logo](./public/assets/logo_dark.png)
 
 
 ## Stack
