@@ -8,6 +8,8 @@ El proyecto es un aplicativo web que consiste en una simulación de una galleta 
 ![HTML](https://img.shields.io/badge/lenguaje-html-red?logo.svg) 
 ![CSS](https://img.shields.io/badge/lenguaje-css-blue?logo=html)
 ![JAVASCRIPT](https://img.shields.io/badge/lenguaje-javascript-yellow?logo=html)
+![React.js](https://img.shields.io/badge/Libreria-React.js-Green)
+
 
 ## Autor
 
